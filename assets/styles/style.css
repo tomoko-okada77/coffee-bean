@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --raleway: "Raleway", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  --black: #312a26;
+  --brown: #96746b;
+  --beige: #c7a17a;
+  --shadow: 3px 3px 6px var(--black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: var(--oswald);
+}
+
+p {
+  font-family: var(--raleway);
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+/* (1) Header area */
+
+.nav {
+  overflow: auto;
+  width: 85%;
+  margin: 1em auto;
+}
+
+.nav h1 {
+  text-transform: uppercase;
+  width: 50%;
+  float: left;
+}
+
+.nav h1 a {
+  font-family: var(--oswald);
+  color: var(--brown);
+  text-decoration: none;
+}
+
+.nav ul {
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-top: 1em;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 2em;
+} 
+
+.nav li a {
+  font-family: var(--raleway);
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
+}
+
+/* (2) Banner area */
+
+.banner {
+  background: url(../images/banner-bg.jpg) no-repeat center / cover;
+  position: relative;
+  max-width: 1800px;
+  height: 670px;
+  margin: auto;
+}
+
+.banner-text h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+  color: var(--beige);
+}
+
+.banner-text h2 span {
+  color: var(--brown);
+  margin: 0 0 0 0.5em;
+}
+
+.banner a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  background: var(--black);
+  color: #fff;
+  font-family: var(--raleway);
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 7.5%;
+  transform: translateY(-50%);
+  width: 45%;
+}
+
+.banner-text p {
+  color: #fff;
+}
+
+/* (3) Ads area */
+
+.ads {
+  width: 80%;
+  margin: 4em auto;
+  overflow: auto;
+} 
+
+.ads-item {
+  width: 48.5%;
+  float: left;
+  height: 350px;
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.ads-item1 {
+  margin-right: 3%;
+  background: url(../images/ads-img1.jpg) center;
+  background-size: cover;
+}
+
+.ads-item2 {
+  background: url(../images/ads-img2.jpg) center;
+  background-size: cover;
+}
+
+.ads-text {
+  position: absolute;
+  top: 35%;
+  left: 7%;
+  width: 50%;
+}
+
+.ads-text h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #fff;
+  line-height: 1.2em;
+  text-shadow: var(--shadow);
+}
+
+.ads-text a {
+  display: block;
+  font-family: var(--raleway);
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 1em;
+  text-shadow: var(--shadow);
+}
+
+/* (4) Merchandise item */
+
+.merch {
+  width: 85%;
+  margin: 4em auto;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header span {
+  font-family: var(--raleway);
+  font-weight: 500;
+  font-style: italic;
+  color: var(--beige);
+}
+
+.section-header h2 {
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.section-header hr {
+  background: var(--beige);
+  height: 2px;
+  width: 25%;
+  margin: auto;
+}
+
+.merch-gallery {
+  margin-top: 2em;
+  overflow: auto;
+}
+
+.merch-item {
+  width: 24.25%;
+  float: left;
+  margin-bottom: 1%;
+  margin-right: 1%;
+}
+
+.merch-item img {
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+}
+
+.merch-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* (5) Discount area  */
+
+.discount {
+  width: 85%;
+  margin: 4em auto;
+  background: url(../images/discount-img.jpg) center;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+
+.discount-text {
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.discount span {
+  font-family: var(--raleway);
+  color: #fff;
+  font-style: italic;
+  text-shadow: var(--shadow);
+}
+
+.discount h2 {
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: var(--shadow);
+}
+
+.discount-text a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.2em 1.5em;
+  background: #ffffff80;
+  color: var(--black);
+  font-family: var(--raleway);
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+/* (6) merchandise sale: same class name from merchandise area
+
+  all css in merchandise area will also applied to merchandise sale
+
+*/
+
+/* (7) Ads area */
+
+.ads-item3 {
+  margin-right: 3%;
+  background: url(../images/ads-img3.jpg) center;
+  background-size: cover;
+}
+
+.ads-item4 {
+  background: url(../images/ads-img4.jpg) center;
+  background-size: cover;
+}
+
+.ads-item5 {
+  margin-right: 3%;
+  background: url(../images/ads-img5.jpg) center;
+  background-size: cover;
+}
+
+.ads-item6 {
+  background: url(../images/ads-img6.jpg) center;
+  background-size: cover;
+}
+
+/* (8) Reservation area */
+
+.reservation {
+  width: 85%;
+  margin: 4em auto;
+}
+
+form {
+  margin-top: 2em;
+  padding: 2em 1em;
+  overflow: hidden;
+}
+
+.form-group {
+  background: #f2f2f2;
+  float: left;
+  width: 49.5%;
+  border-radius: 5px;
+  padding: 2em;
+  height: 650px;
+}
+
+.form-group:nth-child(1) {
+  margin-right: 1%;
+}
+
+form input,
+form select, 
+form textarea {
+  display: inline-block;
+  width: 100%;
+  font-family: var(--raleway);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: .3em;
+  font-weight: 600;
+}
+
+form input[type="submit"] {
+  background: var(--beige);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  width: auto;
+}
+
+.res-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.res-time input {
+  margin: 0 5px 0 0;
+}
+
+.res-time label {
+  margin: 0 .5em 0 0;
+}
+
+.res-time label:last-child {
+  margin: 0;
+}
+
+form p {
+  margin: 1em;
+  text-align: center;
+  font-weight: 700;
+}
+
+form h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+form h3::after {
+  content: "";
+  background: url(../images/reservation-cards.png) no-repeat;
+  background-size: contain;
+  display: block;
+  width: 150px;
+  height: 30px;
+  margin: auto;
+}
+
+.res-agreement {
+  width: auto;
+}
+
+/* (9) Footer area */
+
+.footer {
+  padding: 2em 0 0;
+  background: url(../images/footer-img.jpg) center;
+  background-size: cover;
+  color: #fff;
+}
+
+.footer-contents {
+  width: 85%;
+  margin: auto;
+  overflow: auto;
+}
+
+.footer-widgets {
+  width: 24.25%;
+  margin-right: 1%;
+  float: left;
+}
+
+.footer-widgets:nth-child(4) {
+  margin-right: 0;
+}
+
+.footer-widgets h3 {
+  text-transform: uppercase;
+  text-shadow: var(--shadow);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.footer td, th {
+  font-family: var(--raleway);
+  text-shadow: var(--shadow);
+}
+
+.footer tbody th {
+  text-align: left;
+  font-weight: normal;
+}
+
+.footer td::before {
+  content: ".........";
+}
+
+.footer p {
+  color: var(--beige);
+}
+
+.footer input {
+  width: auto;
+  padding: 10px;
+}
+
+.footer input[type=submit] {
+  background: var(--beige);
+}
+
+.footer-social {
+  margin-top: 3em;
+  background: #19100F;
+  overflow: auto;
+  padding: 1em 7.5%;
+}
+
+.social-widgets {
+  width: 32.66%;
+  float: left;
+  text-align: center;
+}
+
+.social-widgets h3 {
+  text-transform: uppercase;
+}
+
+.social-widgets img {
+  width: 1.5em;
+}
+
+.social-widgets .copy {
+  margin-top: 0.5em;
+  color: #fff;
+  font-size: 0.9em;
+}
