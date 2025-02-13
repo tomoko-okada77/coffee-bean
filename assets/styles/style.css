@@ -17,6 +17,10 @@
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, 
 h2, 
 h3, 
@@ -474,8 +478,128 @@ form h3::after {
   width: 1.5em;
 }
 
+.social-widgets a {
+  text-decoration: none;
+}
+
 .social-widgets .copy {
   margin-top: 0.5em;
   color: #fff;
   font-size: 0.9em;
+}
+
+@media (max-width: 767.98px) {
+
+  #nav {
+    width: 90%;
+    margin: 0.5em auto;
+  }
+
+  #nav h1 {
+    width: 100%;
+  }
+
+  #nav ul {
+    width: 100%;
+    display: flex;
+    padding: 0.5em 0;
+    font-size: 12px;
+  }
+
+  #nav ul li {
+    margin-right: 1em;
+  }
+
+  .banner {
+    height: 335px;
+  }
+
+  .banner-text h2 {
+    font-size: 2em;
+  }
+
+  .ads {
+    width: 90%;
+    margin: 2em auto;
+  } 
+
+  .merch {
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  .merch-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .merch-item {
+    float: none;
+    width: 49%;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  .discount {
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  .ads-text {
+    top: 20%;
+  }
+
+  .reservation {
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  .form-group {
+    width: 100%;
+    height: auto;
+  }
+
+  .res-agreement {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #agree {
+    margin-top: 0.4em;
+    margin-right: 1em;
+  }
+
+  .footer {
+    padding-top: 1em;
+  }
+
+  .footer-contents {
+    padding-bottom: 1.5em;
+  }
+
+  .footer-widgets {
+    width: 100%;
+  }
+
+  .footer-widgets h3 {
+    margin-top: 0.5em;
+  }
+
+  .footer-social {
+    margin-top: 1em;
+  }
+
+  .footer input.search-input {
+    width: 70%;
+  }
+
+  .footer input.search-submit {
+    width: 28%;
+  }
+
 }
